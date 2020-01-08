@@ -1,0 +1,3 @@
+[submodule "submodules/CoreMLHelpers"]
+	path = submodules/CoreMLHelpers
+	url = git@github.com:hollance/CoreMLHelpers.git
