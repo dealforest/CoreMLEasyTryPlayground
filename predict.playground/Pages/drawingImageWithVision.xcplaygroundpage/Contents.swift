@@ -63,7 +63,7 @@ extension DrawingCanvasViewController: PKCanvasViewDelegate {
         
         DispatchQueue
             .global(qos: .userInitiated)
-            .asyncAfter(deadline: .now() + 0.5, execute: submitWorkItem!)
+            .asyncAfter(deadline: .now() + 1.0, execute: submitWorkItem!)
     }
 }
 
