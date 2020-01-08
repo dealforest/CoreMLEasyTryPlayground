@@ -5,7 +5,7 @@
 
 This repository is a collection of Playgrounds that you can easily try when working with CoreML.
 
-
+📝I recommend that you set the build settings to manual, because it's less likely to crash.
 ## predict.playground
 
 ### Vision
