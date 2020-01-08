@@ -33,7 +33,7 @@ This feature saves handwriting as a png image.
 ⚠️ To try this feature, you enable Live View.  
 ![enable live view](https://github.com/dealforest/CoreMLEasyTryPlayground/raw/master/images/enable_live_view.png)
 
-## models
+## Models
 The mnist model was created with reference to [this page](https://github.com/keras-team/keras/blob/master/examples/mnist_cnn.py).
 
 ### Mnist.mlmodel
