@@ -7,7 +7,8 @@ This repository is a collection of Playgrounds that you can easily try when work
 
 📝I recommend that you set the build settings to manual, because it's less likely to crash.
 
-## predict.playground
+## predictNotUseAutoGenerateModel.playground
+All the samples don't use the model automatically generated from mlmodel.
 
 ### Vision
 This feature uses Vision.framework to execute prediction on a model.
