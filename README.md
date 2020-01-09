@@ -46,7 +46,11 @@ input is `MultiArray`.
 
 ![enable live view](https://github.com/dealforest/CoreMLEasyTryPlayground/raw/master/images/mnist_description.png)
 
-### MnistWithInterface.mlmodel
-input is `UIImage` or `CVPixelBuffer`.
+### MnistImageInput.mlmodel
+
+| framework | input type |
+|:----------|:-----------|
+| Vision | `UIImage` |
+| CoreML | `CVPixelBuffer` |
 
 ![enable live view](https://github.com/dealforest/CoreMLEasyTryPlayground/raw/master/images/mnist_with_interface_description.png)

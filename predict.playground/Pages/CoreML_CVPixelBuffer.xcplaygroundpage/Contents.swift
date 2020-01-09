@@ -25,7 +25,7 @@ class MnistWithInterfaceInput : MLFeatureProvider {
 
 let image = UIImage(named: "samples/4.png")!
 
-let modelURL = Bundle.main.url(forResource: "MnistWithInterface", withExtension: "mlmodelc")!
+let modelURL = Bundle.main.url(forResource: "MnistImageInput", withExtension: "mlmodelc")!
 let model = try! MLModel(contentsOf: modelURL)
 
 let pixelBuffer = image.pixelBufferGray(width: 28, height: 28)!

@@ -3,7 +3,7 @@ import Vision
 
 let image = UIImage(named: "samples/4.png")!
 
-let modelURL = Bundle.main.url(forResource: "MnistWithInterface", withExtension: "mlmodelc")!
+let modelURL = Bundle.main.url(forResource: "MnistImageInput", withExtension: "mlmodelc")!
 let model = try! VNCoreMLModel(for: MLModel(contentsOf: modelURL))
 
 let handler = VNImageRequestHandler(cgImage: image.cgImage!, options: [:])
