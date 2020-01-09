@@ -2,7 +2,7 @@ import UIKit
 import CoreML
 
 // define input
-class MnistWithInterfaceInput : MLFeatureProvider {
+class MnistImageTyepInput: MLFeatureProvider {
     var image: CVPixelBuffer
 
     var featureNames: Set<String> {
@@ -25,14 +25,14 @@ class MnistWithInterfaceInput : MLFeatureProvider {
 
 let image = UIImage(named: "samples/4.png")!
 
-let modelURL = Bundle.main.url(forResource: "MnistImageInput", withExtension: "mlmodelc")!
+let modelURL = Bundle.main.url(forResource: "MnistImageType", withExtension: "mlmodelc")!
 let model = try! MLModel(contentsOf: modelURL)
 
 let pixelBuffer = image.pixelBufferGray(width: 28, height: 28)!
 UIImage(ciImage: CIImage(cvImageBuffer: pixelBuffer))
 
 
-let input = MnistWithInterfaceInput(image: pixelBuffer)
+let input = MnistImageTyepInput(image: pixelBuffer)
 let output = try! model.prediction(from: input)
 
 print("[symbol]")

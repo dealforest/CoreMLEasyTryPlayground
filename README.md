@@ -51,7 +51,7 @@ The mnist model was created with reference to [this page](https://github.com/ker
 
 <img src="https://github.com/dealforest/CoreMLEasyTryPlayground/raw/master/images/mnist_description.png" width="250">
 
-### MnistImageInput.mlmodel
+### MnistImageType.mlmodel
 
 | framework | input type |
 |:---------:|:-----------:|

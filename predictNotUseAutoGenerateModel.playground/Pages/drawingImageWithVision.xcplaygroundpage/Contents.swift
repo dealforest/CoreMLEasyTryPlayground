@@ -7,7 +7,7 @@ import PlaygroundSupport
 final class DrawingCanvasViewController: UIViewController {
     private var submitWorkItem: DispatchWorkItem?
     private let model: VNCoreMLModel = {
-        let modelURL = Bundle.main.url(forResource: "MnistImageInput", withExtension: "mlmodelc")!
+        let modelURL = Bundle.main.url(forResource: "MnistImageType", withExtension: "mlmodelc")!
             return try! VNCoreMLModel(for: MLModel(contentsOf: modelURL))
         }()
     
