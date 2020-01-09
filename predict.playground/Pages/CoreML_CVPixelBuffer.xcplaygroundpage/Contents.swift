@@ -3,7 +3,7 @@ import CoreML
 
 // define input
 class MnistWithInterfaceInput : MLFeatureProvider {
-    var pixelBuffer: CVPixelBuffer
+    var image: CVPixelBuffer
 
     var featureNames: Set<String> {
         get {
@@ -13,13 +13,13 @@ class MnistWithInterfaceInput : MLFeatureProvider {
     
     func featureValue(for featureName: String) -> MLFeatureValue? {
         if (featureName == "image") {
-            return MLFeatureValue(pixelBuffer: pixelBuffer)
+            return MLFeatureValue(pixelBuffer: image)
         }
         return nil
     }
     
-    init(pixelBuffer: CVPixelBuffer) {
-        self.pixelBuffer = pixelBuffer
+    init(image: CVPixelBuffer) {
+        self.image = image
     }
 }
 
@@ -32,10 +32,11 @@ let pixelBuffer = image.pixelBufferGray(width: 28, height: 28)!
 UIImage(ciImage: CIImage(cvImageBuffer: pixelBuffer))
 
 
-let input = MnistWithInterfaceInput(pixelBuffer: pixelBuffer)
+let input = MnistWithInterfaceInput(image: pixelBuffer)
 let output = try! model.prediction(from: input)
 
 print("[symbol]")
 print(output.featureValue(for: "symbol") ?? "none")
 print("[classLabel]")
 print(output.featureValue(for: "classLabel") ?? "none")
+

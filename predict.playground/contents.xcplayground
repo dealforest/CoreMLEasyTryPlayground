@@ -2,7 +2,8 @@
 <playground version='6.0' target-platform='ios'>
     <pages>
         <page name='Vision'/>
-        <page name='CoreML'/>
+        <page name='CoreML_CVPixelBuffer'/>
         <page name='drawingImageWithVision'/>
+        <page name='CoreML_MLMultiArray'/>
     </pages>
 </playground>

@@ -13,8 +13,13 @@ This feature uses Vision.framework to execute prediction on a model.
 
 ![predict vision](https://github.com/dealforest/CoreMLEasyTryPlayground/raw/master/images/predict_vision.png)
 
-### CoreML
-This feature uses CoreML.framework to execute prediction on a model.
+### CoreML_CVPixelBuffer
+This feature uses CoreML.framework to execute prediction by `CVPixelBuffer` on a model.
+
+
+### CoreML_MLMultiArray
+This feature uses CoreML.framework to execute prediction by `MLMultiArray` on a model.  
+⚠️ I don't recommend using `MLMultiArray` directly.
 
 ### drawingImageWithVision
 

@@ -1,5 +1,3 @@
-//: A UIKit based Playground for presenting user interface
-  
 import UIKit
 import PencilKit
 import Vision
@@ -146,3 +144,5 @@ extension UIImage {
 
 PlaygroundPage.current.needsIndefiniteExecution = true
 PlaygroundPage.current.liveView = DrawingCanvasViewController()
+
+
